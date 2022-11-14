@@ -1,0 +1,38 @@
+.tech {
+    margin-top: 60px ;
+    .title {
+        font-family: Montserrat Alternates;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        margin-bottom: 25px;
+        margin-bottom: 25px;
+    
+    }
+      .desc {
+          font-family: Montserrat Alternates;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 0em;
+          margin-bottom: 40px;
+    
+      }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            margin: 10px;
+            width: 30%;
+            max-width: 200px;
+            border: 1px solid #2F80ED;
+            padding: 10px;
+        }
+    }
+}

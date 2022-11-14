@@ -37,18 +37,52 @@
   }
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .container{
   padding-left: 20px;
   padding-right: 20px;
 }
+.full-w {
+  width: 100%;
+}
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 
 .text {
   font-family: 'Montserrat Alternates';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 170%;
-  text-align: center;
+}
 
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
 }

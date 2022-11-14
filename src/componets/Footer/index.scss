@@ -1,0 +1,35 @@
+.footer {
+    background: rgba(47, 128, 237, 0.03);
+    padding-top: 40px;
+    margin-top: 80px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-bottom: 50px;
+    .logo-row {
+        display: flex;
+        align-items: center;
+        .logo {
+            background-blend-mode: exclusion;
+            background-image: url('../../assets/img/logo.png');
+            height: 28px;
+            width: 113px;
+            border-radius: 0px;        
+            background-color: white;
+            background-size: contain;
+            margin-left: -20px;
+        }
+        .midias {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            img:last-of-type {
+                padding-right:90px;
+                margin-left: 40px;
+            }
+        }
+    }
+}

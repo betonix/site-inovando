@@ -1,0 +1,30 @@
+.process {
+padding-top: 40px;
+.container-process-img {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 280px;
+    }
+   
+}
+ .title {
+        font-family: Montserrat Alternates;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        margin-bottom: 25px;
+    
+    }
+      .desc {
+          font-family: Montserrat Alternates;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 0em;
+    
+      }
+}

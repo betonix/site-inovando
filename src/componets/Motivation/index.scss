@@ -1,0 +1,61 @@
+.motivation {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title {
+        font-family: Montserrat Alternates;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 40px;
+    }
+    .desc {
+        font-family: Montserrat Alternates;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
+    .talk {
+        font-family: Montserrat Alternates;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+
+            span {
+                font-family: 'Montserrat Alternates';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 31px;
+                line-height: 10px;
+                /* identical to box height, or 74px */
+    
+                text-align: center;
+    
+                /* Blue 1 */
+    
+                color: #2F80ED;
+               
+            }
+            span:first-of-type {
+                margin-right:10px ;
+            }
+        
+      
+    }
+}

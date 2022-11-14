@@ -1,0 +1,27 @@
+.imagesCode {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    .container-img {
+        position: relative;
+        width: 187px;
+        img {
+            position: absolute;
+        }
+        .man {
+            top: 33px;
+            left: 30px;
+        
+        }
+        .code {
+            top: 163px;
+            left: -30px;
+    
+        }
+        .circle {
+            top: 144px;
+    
+        }
+    }
+   
+}
