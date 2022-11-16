@@ -7,22 +7,13 @@
     flex-direction: column;
 
     h1 {
-        width: 324px;
-        height: 76px;
-        left: 24px;
-        top: 1725px;
-        
+        height: 76px;   
         font-family: 'Montserrat Alternates';
         font-style: normal;
         font-weight: 800;
         font-size: 32px;
         line-height: 120%;
-        /* or 38px */
-        
         letter-spacing: 0.02em;
-        
-        /* Gray 2 */
-        
         color: #4F4F4F;
 
     }
@@ -82,3 +73,35 @@
     margin-top: 20px;
 }
 }
+
+
+@media (min-width:1200px) {
+    .pillars {
+        align-items: center;
+        margin-bottom: 40px;
+        padding-bottom: 40PX;
+        h1 {
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .cards {
+            padding: 0;
+            justify-self: center;
+            overflow:hidden;
+            justify-content: space-between;
+            .card {
+                background: transparent;
+                box-shadow: none;
+                margin: 0px;
+                min-width: 230px;
+                max-width: 230px;
+            }
+        }
+        .arrow-h {
+           display: none;
+        }
+    }
+}
+

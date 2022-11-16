@@ -31,12 +31,16 @@ const cards = [
 const Technology = () => {
     return (
         <div className='tech container'>
+            <div className='box-text'>
             <h1 className='title'>Tecnologias que utilizamos</h1>
             <p className='desc'>Temos uma equipe multidisciplinar e muito qualificada nas diversas áreas de tecnologia para desenvolver a solução perfeita para você, sua empresa e seu cliente.</p>
+            </div>
+            <div className='box-img'>
             <div className='cards'>
                 {cards.map(item=>(
                     <img src={item.img} alt="" />
                 ))}
+            </div>
             </div>
         </div>
     );

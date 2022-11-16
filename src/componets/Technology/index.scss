@@ -36,3 +36,56 @@
         }
     }
 }
+
+@media (min-width:1200px) {
+    .tech {
+        display: flex;
+        margin-top: 80px;
+        align-items: center;
+        .box-text {
+            width: 50%;
+            .title {
+                font-family: 'Montserrat Alternates';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 43px;
+                line-height: 120%;
+                /* identical to box height, or 52px */
+
+                letter-spacing: 0.02em;
+
+                /* Gray 1 */
+
+                color: #333333;
+            }
+            .desc {
+
+                font-family: 'Montserrat Alternates';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 187%;
+                /* or 30px */
+
+                letter-spacing: 0.02em;
+
+                /* Gray 2 */
+
+                color: #4F4F4F;
+            }
+            
+        }
+        .box-img{
+            margin-left: auto;
+            width: 50%;
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 800px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -35,3 +35,26 @@
     margin-left: 50%;
 
 }
+
+@media (min-width:1200px) {
+    .partners {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin: 0px;
+            }
+            .images{ 
+                width: 100%;
+                margin-top: 30px;
+                justify-content: space-evenly;
+                img {
+                    max-width: 120px;
+                }
+            }
+        }
+
+
+    }
+}

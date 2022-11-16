@@ -1,8 +1,22 @@
 .header {
-    display: flex;
-    align-items: center;
     padding-top: 20px;
     justify-content: space-between;
+    position: sticky; top: 0;
+    background: white;
+    z-index: 10;
+    transition: all 0.5s;
+    padding-bottom: 10px;
+    &.shadow {
+        box-shadow: -20px -10px 20px 0px grey;
+        transition: all 0.5s;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .nav {
+        display: none
+    }
     .logo {
         background-blend-mode: exclusion;
         background-image: url('../../assets/img/logo.png');
@@ -23,6 +37,48 @@
         align-items: center;
         justify-content: center;
         color: #2F80ED;
+        margin-left: auto;
         
     }
+}
+
+
+@media (min-width:1200px) {
+   .header {
+    position: sticky; top: 0;
+    width: 100vw;
+    background: white;
+    z-index: 10;
+    transition: all 0.5s;
+    padding-bottom: 20px;
+    &.shadow {
+        box-shadow: -20px -10px 20px 0px grey;
+        transition: all 0.5s;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .fale-conosco {
+            margin-left: auto;
+        }
+    }
+    .nav {
+        margin-left: auto;
+        list-style: none;
+        display: flex;
+        justify-self: center;
+        text-decoration: none;
+        font-family: Montserrat Alternates;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        li {
+            margin-right: 80px;
+        }
+    }
+   }
 }

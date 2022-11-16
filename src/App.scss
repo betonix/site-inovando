@@ -86,3 +86,12 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
   }
 }
+
+
+.row {
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}

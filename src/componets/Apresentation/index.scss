@@ -27,4 +27,34 @@
         align-self: center;
     
     }
+    .img-bg { 
+        display: none;
+    }
 }
+
+@media (min-width:1200px) {
+    .apresentation {
+        flex-direction: row;
+        margin-top: 50px !important;
+        margin-bottom: 80px;
+        .box-text {
+            width: 40%;
+        }
+        a{
+            margin-top: 40px;
+    
+        }
+        .img-bg {
+            width: 50%;
+            margin-left: auto;
+            display: block;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+           
+        }
+    }
+    
+}
+  

@@ -2,6 +2,10 @@
     padding-top: 80px;
     display: flex;
     flex-direction: column;
+    .box-img {
+        display: flex;
+        justify-content: center;
+    }
     img {
         width: 100%;
         max-width: 400px;
@@ -57,5 +61,25 @@
             }
         
       
+    }
+}
+
+@media (min-width:1200px){
+    .motivation {
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 100%;
+            max-width: 100%; 
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .box-img{
+            width: 40%;
+        }
+        .box-text{
+            margin-left: auto;
+            width: 50%;
+        }
     }
 }
