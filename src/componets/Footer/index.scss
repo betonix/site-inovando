@@ -33,3 +33,18 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .footer {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                margin: 0;
+            }
+            .midias {
+                margin-left: 70px;
+            }
+        }
+    }
+}

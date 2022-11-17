@@ -1,6 +1,5 @@
 .lgpd {
 margin-top: 80px;
-
 background: #2F80ED;
 border-radius: 8px;
 padding: 56px 24px;
@@ -31,9 +30,10 @@ padding: 56px 24px;
 @media (min-width: 1200px) {
     .lgpd {
         display: flex;
-        padding: 50px 64px;
+        padding: 50px 0px;
         .box-text {
             width: 50%;
+            padding-left: 64px;
             .title {
                 font-family: Montserrat Alternates;
                 font-size: 43px;
@@ -56,6 +56,7 @@ padding: 56px 24px;
         .box-img {
             display: block;
             margin-left: auto;
+            padding-right: 64px;
             img {
                 width: 100%;
                 max-width: 471px;
