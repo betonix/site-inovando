@@ -14,17 +14,20 @@
         display: flex;
         align-items: center;
     }
+    nav {
+        margin-left: auto;
+    }
     .nav {
         display: none
     }
     .logo {
         background-blend-mode: exclusion;
-        background-image: url('../../assets/img/logo.png');
+        background-image: url('../../assets/img/Logo Inovando_Positivo (1) 1.png');
         height: 28px;
         width: 113px;
         border-radius: 0px;        
-        background-color: white;
         background-size: contain;
+        background-repeat: no-repeat;
     }
     .fale-conosco {
         height: 57px;
@@ -38,15 +41,22 @@
         justify-content: center;
         color: #2F80ED;
         margin-left: auto;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+            background: #2F80ED;
+            color: white;
+            transition: all 0.5s;
+        }
         
     }
+    
 }
 
 
 @media (min-width:1200px) {
    .header {
     position: sticky; top: 0;
-    width: 100vw;
     background: white;
     z-index: 10;
     transition: all 0.5s;
@@ -68,17 +78,44 @@
         list-style: none;
         display: flex;
         justify-self: center;
-        text-decoration: none;
-        font-family: Montserrat Alternates;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 31px;
-        letter-spacing: 0em;
-        text-align: center;
+
 
         li {
             margin-right: 80px;
+            a {
+                text-decoration: none;
+                font-family: Montserrat Alternates;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 31px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #333333;
+            }
         }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+          }
+          
+          .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #333333;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+          
+          .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
     }
    }
 }

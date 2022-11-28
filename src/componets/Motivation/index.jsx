@@ -5,7 +5,7 @@ import ImgMan from '../../assets/img/unsplash_rxpThOwuVgE.png'
 
 const Motivation = () => {
     return (
-        <div className='motivation container'>
+        <div className='motivation container bg-w '>
           <div className='box-img'>
             <img src={ImgMan} alt="imagem homem explicando" />
             </div>

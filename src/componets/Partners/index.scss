@@ -26,6 +26,27 @@
     }
 
     }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 25px;
+        height: 9px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: rgb(247 247 247 / 0%);
+        border-radius: 25px;
+        height: 2px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+         background: rgb(255 255 255 / 48%);
+          border-radius: 25px;
+          width: 2px;
+          height: 2px; 
+      }
   
 }
 .arrow {

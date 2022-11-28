@@ -31,8 +31,17 @@
             margin: 10px;
             width: 30%;
             max-width: 200px;
-            border: 1px solid #2F80ED;
+            border: 1px solid #e2eaf6;
             padding: 10px;
+
+            &.ionic {             
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            &.amazon {
+                padding-top: 20px;
+                padding-bottom: 17px;
+            }
         }
     }
 }
@@ -85,6 +94,16 @@
                 max-width: 800px;
                 margin-left: 0;
                 margin-right: 0;
+                img {
+                    &.ionic {             
+                        padding-top: 34px;
+                        padding-bottom: 29px;
+                    }
+                    &.amazon {
+                        padding-top: 37px;
+                        padding-bottom: 16px;
+                    }
+                }
             }
         }
     }

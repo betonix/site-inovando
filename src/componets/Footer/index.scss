@@ -14,13 +14,13 @@
         align-items: center;
         .logo {
             background-blend-mode: exclusion;
-            background-image: url('../../assets/img/logo.png');
+            background-image: url('../../assets/img/Logo Inovando_Positivo (1) 1.png');
             height: 28px;
             width: 113px;
             border-radius: 0px;        
-            background-color: white;
+            background-repeat: no-repeat;
             background-size: contain;
-            margin-left: -20px;
+            //margin-left: -20px;
         }
         .midias {
             display: flex;

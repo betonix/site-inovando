@@ -4,12 +4,13 @@ import './index.scss'
 import Ionic from '../../assets/img/ionic dark logotype blue.png'
 import GitHub from '../../assets/img/GitHub-Logo.png'
 import Firebase from '../../assets/img/logo-standard.png'
-import Node from '../../assets/img/node-js.png'
+import Node from '../../assets/img/node-js-g1db1bcaf1_640.png'
 import ReactLogo from '../../assets/img/React_logo_wordmark.png'
 import Amazon from '../../assets/img/amazon-logo-10.png'
 
 const cards = [
-    {
+    {   
+        id:'ionic',
         img : Ionic
     },
     {
@@ -24,7 +25,8 @@ const cards = [
     {
         img : Node
     },
-    {
+    {   
+        id:'amazon',
         img : Amazon
     }
 ]
@@ -38,7 +40,7 @@ const Technology = () => {
             <div className='box-img'>
             <div className='cards'>
                 {cards.map(item=>(
-                    <img src={item.img} alt="" />
+                    <img className={item.id} src={item.img} alt="" />
                 ))}
             </div>
             </div>

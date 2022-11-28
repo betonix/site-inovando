@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss'
-import Logo from '../../assets/img/logo.png'
+import Logo from '../../assets/img/Logo Inovando_Positivo.png'
 import Insta from '../../assets/img/Logo 2.png'
 import Linkedin from '../../assets/img/Logo 11.png'
 
